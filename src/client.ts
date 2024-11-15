@@ -414,7 +414,7 @@ click-to-vue-component-popover {
 <click-to-vue-component-popover popover='manual' click-to-vue-component-ignore-alt-click></click-to-vue-component-popover>`,
   )
 
-  const vueClickToComponentPopoverEl = document.querySelector(
+  const clickToVueComponentPopoverEl = document.querySelector(
     'click-to-vue-component-popover',
   ) as Popover
 
@@ -436,14 +436,14 @@ click-to-vue-component-popover {
         const componentInfoList = getComponentInfoList(
           elListWithSourceCodeLocationList,
         )
-        vueClickToComponentPopoverEl.updateComponentInfoList(
+        clickToVueComponentPopoverEl.updateComponentInfoList(
           componentInfoList,
         )
 
         cleanAnchor()
         setAnchor(elListWithSourceCodeLocationList[0])
         // @ts-ignore
-        vueClickToComponentPopoverEl.showPopover()
+        clickToVueComponentPopoverEl.showPopover()
 
         (document.activeElement as HTMLElement).blur()
       }
@@ -454,7 +454,7 @@ click-to-vue-component-popover {
   // @ts-ignore
   hidePopover = function () {
     try {
-      vueClickToComponentPopoverEl.hidePopover()
+      clickToVueComponentPopoverEl.hidePopover()
       cleanAnchor()
     } catch (error) {
       console.error('[click-to-vue-component] hide popover failed', error)

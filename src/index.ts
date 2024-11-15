@@ -1,3 +1,3 @@
-import VueClickToComponent from './config'
+import ClickToVueComponent from './config'
 
-export default VueClickToComponent
+export default ClickToVueComponent

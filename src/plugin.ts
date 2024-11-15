@@ -16,7 +16,7 @@ console.log(
 console.log('%c 按住 "option + 点击页面元素" 查看组件源码 ', 'padding: 1px; border-left: 3px solid #007aff;');
 `
 
-export default class VueClickToComponentPlugin {
+export default class ClickToVueComponentPlugin {
   
   apply(compiler) {
     compiler.hooks.beforeCompile.tapAsync('ClickToVueComponentBeforeRunPlugin', (compilation, callback) => {
