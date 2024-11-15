@@ -1,0 +1,49 @@
+{
+  "name": "click-to-vue-component",
+  "version": "1.0.0",
+  "description": "快速定位Vue组件源码",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "release": "npm run build && release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WeilinerL/click-to-vue-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.2.0",
+    "parse5": "^7.2.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.8.7",
+    "@types/webpack-chain": "^5.2.0",
+    "@types/ws": "^8.5.13",
+    "html-tags": "^4.0.0",
+    "release-it": "^17.10.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.24.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.6.3"
+  },
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": false,
+      "commitMessage": "chore: release v${version}"
+    },
+    "npm": {
+      "publish": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es2015",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "rootDir": "src",
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "lib": [
+      "ES2015",
+      "DOM",
+      "es5",
+      "es2015.promise",
+      "es2015",
+      "es2017",
+      "esnext"
+    ],
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": ["node_modules", "dist"]
+}
